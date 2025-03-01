@@ -124,7 +124,7 @@ export default function Header() {
             </h1>
             <div className="mx-auto max-w-[350px] md:hidden relative grid grid-cols-3 gap-4 mb-8">
               {mobileProfessionals.map((image) => (
-                <div className="rounded-2xl overflow-hidden">
+                <div className="rounded-2xl overflow-hidden" key={image}>
                   <img
                     src={ASSETS[image]}
                     alt="Professional"

@@ -104,8 +104,8 @@ export default function PricingPlan() {
               <div className="w-full h-[1px] bg-[#d8d8d8] mb-6" />
 
               <ul className="space-y-4">
-                {plan.benefits.map((benefit) => (
-                  <li className="flex gap-2">
+                {plan.benefits.map((benefit, i) => (
+                  <li className="flex gap-2" key={i}>
                     <img
                       src={ASSETS["/checkmark-red.svg"]}
                       alt=""

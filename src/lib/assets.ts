@@ -103,6 +103,8 @@ export const ASSETS = {
     "https://res.cloudinary.com/yousafsabir/image/upload/v1740466551/twitter-black_qbpz5v.svg",
   "/why-image.svg":
     "https://res.cloudinary.com/yousafsabir/image/upload/v1740466551/why-image_apfoyy.svg",
+  "/youtube-black.svg":
+    "https://res.cloudinary.com/yousafsabir/image/upload/v1740859070/youtube-black_y2dgvh.svg",
 } as const;
 
 export type AssetKey = keyof typeof ASSETS;

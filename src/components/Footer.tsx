@@ -1,20 +1,18 @@
 import { ASSETS } from "@/lib/assets";
 import { Button } from "@/components/ui/button";
 
-const quickLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "/contact" },
-  { label: "Our Services", href: "/services" },
-  { label: "Blog Posts", href: "/blog" },
-  { label: "Careers", href: "/careers" },
+const explore = [
+  { label: "Find Work", href: "https://www.redwigwam.com/find-work/" },
+  { label: "Post a Job", href: "https://www.redwigwam.com/post-a-job/" },
+  { label: "Latest Jobs", href: "https://www.redwigwam.com/jobs/" },
+  { label: "Sectors", href: "https://www.redwigwam.com/sectors/" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Contact Us", href: "https://www.redwigwam.com/contact-us/" },
 ];
 
-const resources = [
-  { label: "Help Centre", href: "/help" },
-  { label: "Support", href: "/support" },
-  { label: "FAQs", href: "/faqs" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Privacy Policy", href: "/privacy" },
+const legal = [
+  { label: "Privacy", href: "https://www.redwigwam.com/privacy/" },
+  { label: "Terms", href: "https://www.redwigwam.com/terms/" },
 ];
 
 const socialLinks: {
@@ -24,40 +22,29 @@ const socialLinks: {
 }[] = [
   {
     label: "Facebook",
-    href: "https://facebook.com",
+    href: "https://en-gb.facebook.com/redwigwam/",
     icon: "/facebook-black.svg",
   },
   {
     label: "Twitter",
-    href: "https://twitter.com",
+    href: "https://twitter.com/redwigwam",
     icon: "/twitter-black.svg",
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/company/red-wigwam",
     icon: "/linkedin-black.svg",
   },
   {
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/redwigwam/?hl=en",
     icon: "/instagram-black.svg",
   },
-];
-
-const legalLinks = [
-  { label: "Cookie Policy", href: "/cookie-policy" },
-  { label: "User Agreement", href: "/user-agreement" },
-  { label: "Data Protection", href: "/data-protection" },
-  { label: "Accessibility", href: "/accessibility" },
-  { label: "Contact Support", href: "/contact-support" },
-];
-
-const companyInfo = [
-  { label: "Join Our Team", href: "/careers" },
-  { label: "Latest Updates", href: "/updates" },
-  { label: "Our Partners", href: "/partners" },
-  { label: "Client Stories", href: "/case-studies" },
-  { label: "Newsroom", href: "/news" },
+  {
+    label: "Youtube",
+    href: "https://www.youtube.com/channel/UCFcWRzx65Oo7lZO2YPuW0xQ",
+    icon: "/youtube-black.svg",
+  },
 ];
 
 export default function () {
@@ -98,11 +85,11 @@ export default function () {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
           <div>
-            <h3 className="font-bold text-app-gray-3 mb-6">Quick Links</h3>
+            <h3 className="font-bold text-app-gray-3 mb-6">Explore</h3>
             <ul className="space-y-4">
-              {quickLinks.map((link, i) => (
+              {explore.map((link, i) => (
                 <li key={link.href + i}>
                   <a
                     href={link.href}
@@ -116,9 +103,9 @@ export default function () {
           </div>
 
           <div>
-            <h3 className="font-bold text-app-gray-3 mb-6">Resources</h3>
+            <h3 className="font-bold text-app-gray-3 mb-6">Legal</h3>
             <ul className="space-y-4">
-              {resources.map((link, i) => (
+              {legal.map((link, i) => (
                 <li key={link.href + i}>
                   <a
                     href={link.href}
@@ -132,45 +119,14 @@ export default function () {
           </div>
 
           <div>
-            <h3 className="font-bold text-app-gray-3 mb-6">Follow Us</h3>
+            <h3 className="font-bold text-app-gray-3 mb-6">Social</h3>
             <ul className="space-y-4">
               {socialLinks.map((link, i) => (
                 <li key={link.href + i}>
                   <a
                     href={link.href}
                     className="text-app-gray-2 hover:text-gray-900"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-app-gray-3 mb-6">Legal Links</h3>
-            <ul className="space-y-4">
-              {legalLinks.map((link, i) => (
-                <li key={link.href + i}>
-                  <a
-                    href={link.href}
-                    className="text-app-gray-2 hover:text-gray-900"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-app-gray-3 mb-6">Company Info</h3>
-            <ul className="space-y-4">
-              {companyInfo.map((link, i) => (
-                <li key={link.href + i}>
-                  <a
-                    href={link.href}
-                    className="text-app-gray-2 hover:text-gray-900"
+                    target="_blank"
                   >
                     {link.label}
                   </a>
@@ -183,12 +139,18 @@ export default function () {
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4 pt-8 border-t">
           <div className="flex flex-col md:flex-row items-center gap-4 lg:gap-7">
             <p className="text-app-gray-2">
-              © 2024 Redwigwam. All rights reserved.
+              © 2025 Redwigwam. All rights reserved.
             </p>
-            <a href="/privacy" className="text-app-gray-2 hover:text-gray-900">
+            <a
+              href="https://www.redwigwam.com/privacy/"
+              className="text-app-gray-2 hover:text-gray-900"
+            >
               Privacy Policy
             </a>
-            <a href="/terms" className="text-app-gray-2 hover:text-gray-900">
+            <a
+              href="https://www.redwigwam.com/terms/"
+              className="text-app-gray-2 hover:text-gray-900"
+            >
               Terms of Service
             </a>
             <button className="text-app-gray-2 hover:text-gray-900">
@@ -198,7 +160,7 @@ export default function () {
 
           <div className="flex items-center gap-4">
             {socialLinks.map((social, i) => (
-              <a href={social.href} key={social.href + i}>
+              <a href={social.href} key={social.href + i} target="_blank">
                 <img
                   src={ASSETS[social.icon]}
                   alt={social.label}
