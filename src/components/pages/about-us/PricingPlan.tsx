@@ -5,26 +5,41 @@ const pricingPlans = [
   {
     mostPopular: false,
     title: "Pay as you go",
-    pricing: "4.17",
-    benefits: ["Per Job Posted", "Applicant Tracking", "Sms"],
+    pricing: "£12",
+    period: "per day",
+
+    benefits: [
+      "Per Job Posted",
+      "Applicant Tracking",
+      "SMS access",
+      "Access to Redwigwam workers",
+    ],
     link: "#",
   },
   {
     mostPopular: true,
     title: "Business Plan",
-    pricing: "4.17",
-    benefits: ["Sms", "Right to Work", "Job Board Distribution", "ATS"],
+    pricing: "£199",
+    period: "mo",
+    benefits: [
+      "Sms",
+      "Right to work checks",
+      "Job Board Distribution",
+      "ATS Access",
+    ],
     link: "#",
   },
   {
     mostPopular: false,
     title: "Enterprise Plan",
-    pricing: "4.17",
+    pricing: "£599",
+    period: "mo",
     benefits: [
-      "Premium Job Board Distribution",
-      "Shift Management",
-      "Right to Work",
-      "Unlimited Sms",
+      "Premium Job board Distribution",
+      "Shift management",
+      "Export worker details",
+      "Right to work checks",
+      "Unlimited SMS",
     ],
     link: "#",
   },
@@ -51,13 +66,22 @@ export default function PricingPlan() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pricingPlans.map((plan) => (
-            <div className="bg-white rounded-[10px] border border-[#d8d8d8] p-8">
+            <div
+              className="relative overflow-hidden bg-white rounded-[10px] border border-[#d8d8d8] p-8"
+              key={plan.pricing}
+            >
+              {/* Most Popular Banner */}
+              {plan.mostPopular && (
+                <div className="absolute w-[300px] flex top-12 -right-32 rotate-[45deg] bg-red-500 text-white px-4 py-2 rounded-bl-lg">
+                  <p className="ml-[55px]">Most Popular</p>
+                </div>
+              )}
               <div className="inline-block bg-gray-100 px-4 py-2 rounded-lg mb-8">
                 {plan.title}
               </div>
               <div className="flex items-baseline gap-1 mb-2">
-                <span className="text-4xl font-medium">${plan.pricing}</span>
-                <span className="text-gray-600">/mo</span>
+                <span className="text-4xl font-medium">{plan.pricing}</span>
+                <span className="text-gray-600">/{plan.period}</span>
               </div>
               <p className="text-gray-600 mb-8">*when billed yearly</p>
               <a href={plan.link} className="block mb-6">
@@ -89,10 +113,7 @@ export default function PricingPlan() {
                     />
                     <span className="font-medium text-app-gray-3">
                       {benefit}
-                      <span className="font-normal text-app-gray-1">
-                        Access
-                      </span>
-                    </span>{" "}
+                    </span>
                   </li>
                 ))}
               </ul>
