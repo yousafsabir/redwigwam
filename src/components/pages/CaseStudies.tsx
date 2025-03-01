@@ -14,15 +14,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-
-// Swiper CSS
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/free-mode";
-import "swiper/css/thumbs";
-import "swiper/css/mousewheel";
 import { Button } from "@/components/ui/button";
-import { Undo } from "lucide-react";
 
 interface CaseStudy {
   id: number;
@@ -195,6 +187,10 @@ export default function CaseStudies() {
           slidesPerView={1}
           spaceBetween={32}
           loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
           navigation={{
             prevEl: swiperPrevBtnRef.current,
             nextEl: swiperNextBtnRef.current,

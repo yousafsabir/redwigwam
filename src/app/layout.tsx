@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import { Fustat } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+// Swiper CSS
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/free-mode";
+import "swiper/css/thumbs";
+import "swiper/css/mousewheel";
+
 import "./globals.css";
 
 const fustatSans = Fustat({

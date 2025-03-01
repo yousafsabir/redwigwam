@@ -1,5 +1,9 @@
+"use client";
+
 import { ASSETS } from "@/lib/assets";
 import { Button } from "@/components/ui/button";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 const mobileProfessionals = [
   "/professional-1.png",
@@ -14,21 +18,34 @@ const mobileProfessionals = [
 ] as const;
 
 const professionals = [
-  "/professional-1.png",
-  "/professional-2.png",
-  "/professional-3.png",
-  "/professional-4.png",
-  "/professional-5.png",
-  "/professional-6.png",
-  "/professional-7.png",
-  "/professional-8.png",
-  "/professional-9.png",
-  "/professional-10.png",
-  "/professional-11.png",
-  "/professional-12.png",
+  [
+    "/professional-1.png",
+    "/professional-2.png",
+    "/professional-3.png",
+    "/professional-4.png",
+    "/professional-11.png",
+    "/professional-12.png",
+  ],
+  [
+    "/professional-5.png",
+    "/professional-6.png",
+    "/professional-7.png",
+    "/professional-8.png",
+    "/professional-4.png",
+    "/professional-3.png",
+  ],
+  [
+    "/professional-9.png",
+    "/professional-10.png",
+    "/professional-11.png",
+    "/professional-12.png",
+    "/professional-1.png",
+    "/professional-2.png",
+  ],
 ] as const;
 
 export default function Header() {
+  console.log("Re render");
   return (
     <header className="relative min-h-[90vh] flex items-center overflow-hidden">
       <img
@@ -116,16 +133,39 @@ export default function Header() {
               alt=""
               className="absolute inset-0 w-full h-full object-cover opacity-10"
             />
-            <div className="relative grid grid-cols-4 grid-rows-3 gap-4">
-              {professionals.map((image) => (
-                <div className="rounded-2xl overflow-hidden" key={image}>
-                  <img
-                    src={ASSETS[image]}
-                    alt="Professional"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
+            <div className="space-y-4">
+              {professionals.map((p, i) => (
+                <Swiper
+                  key={i}
+                  modules={[Autoplay]}
+                  slidesPerView={3}
+                  spaceBetween={16}
+                  loop={true}
+                  autoplay={{
+                    delay: 0,
+                    disableOnInteraction: false,
+                    reverseDirection: i % 2 === 0,
+                  }}
+                  speed={1700}
+                  breakpoints={{
+                    1024: {
+                      slidesPerView: 4,
+                    },
+                  }}
+                >
+                  {p.map((image) => (
+                    <SwiperSlide key={image}>
+                      <div className="rounded-2xl w-[120px] aspect-square overflow-hidden">
+                        <img
+                          src={ASSETS[image]}
+                          alt="Professional"
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               ))}
             </div>
           </div>
