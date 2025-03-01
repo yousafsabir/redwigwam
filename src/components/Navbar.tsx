@@ -10,7 +10,7 @@ export default function Navbar() {
             <img src={ASSETS["/logo.svg"]} alt="Redwigwam" className="h-8" />
           </a>
           <a
-            href="/about"
+            href="/about-us"
             className="hidden text-app-gray-2 md:inline font-medium hover:opacity-75"
           >
             About Us
