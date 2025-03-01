@@ -1,5 +1,10 @@
 import { ASSETS } from "@/lib/assets";
 import Sidebar from "@/components/Sidebar";
+import {
+  JobSeekersDropdown,
+  EmployersDropdown,
+} from "@/components/NavDropdowns";
+import { Joan } from "next/font/google";
 
 export default function Navbar() {
   return (
@@ -18,19 +23,8 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-10">
-          <div className="relative group">
-            <button className="flex items-center gap-[5px] text-app-gray-2 font-medium hover:opacity-75">
-              For Job Seeker
-              <img src={ASSETS["/angle-down.svg"]} alt="" className="w-4 h-4" />
-            </button>
-          </div>
-
-          <div className="relative group">
-            <button className="flex items-center gap-[5px] text-app-gray-2 font-medium hover:opacity-75">
-              For Employers
-              <img src={ASSETS["/angle-down.svg"]} alt="" className="w-4 h-4" />
-            </button>
-          </div>
+          <JobSeekersDropdown />
+          <EmployersDropdown />
         </div>
 
         <Sidebar />

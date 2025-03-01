@@ -22,14 +22,31 @@ export default function () {
               solutions that fit your needs. Experience the ease of hiring with
               our pre-vetted workforce.
             </p>
-            <div className="flex justify-center lg:justify-start">
-              <a href="/get-started">
+            <div className="flex justify-center gap-3 lg:justify-start">
+              <a
+                href="https://savvycal.com/redwigwam/chat-with-redwigwam"
+                target="_blank"
+              >
                 <Button variant="default">
-                  Get Started
+                  Book Demo
                   <img
                     src={ASSETS["/arrow-right-white.svg"]}
                     alt=""
                     className="w-5 h-5"
+                  />
+                </Button>
+              </a>
+
+              <a
+                href="https://hirer.redwigwam.com/wizards/registration"
+                target="_blank"
+              >
+                <Button variant="outline">
+                  Register Now
+                  <img
+                    src={ASSETS["/arrow-right-black.svg"]}
+                    alt=""
+                    className="w-5 h-5 transition-transform group-hover:translate-x-1"
                   />
                 </Button>
               </a>

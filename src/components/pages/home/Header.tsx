@@ -65,7 +65,10 @@ export default function Header() {
               efficiently.
             </p>
             <div className="flex justify-center md:justify-start flex-wrap gap-4">
-              <a href="/demo">
+              <a
+                href="https://savvycal.com/redwigwam/chat-with-redwigwam"
+                target="_blank"
+              >
                 <Button variant="default">
                   Book A Demo
                   <img
@@ -75,7 +78,10 @@ export default function Header() {
                   />
                 </Button>
               </a>
-              <a href="/register">
+              <a
+                href="https://hirer.redwigwam.com/wizards/registration"
+                target="_blank"
+              >
                 <Button variant="outline">
                   Register Now
                   <img

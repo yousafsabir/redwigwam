@@ -12,6 +12,7 @@ const why = [
       "Tried of posting on various job boards? We'll handle your job posting for you.",
       "consolidating all candidates in a central, secure, and user-friendly platform",
     ],
+    btnText: "Get Started",
   },
   {
     image: ASSETS["/qualified-workers.svg"],
@@ -22,6 +23,7 @@ const why = [
       "Request videos, resume, availability, and specific  to ensure that only the most suitable candidates advance through your application process. Save your team the effort of pursing unqualified candidates.",
       "The typical candidate applies to 74 job during each visit to indeed. Is your team spending hours each day reminding employees about their applications and what your business represents?",
     ],
+    btnText: "Book Demo",
   },
   {
     image: ASSETS["/responsive-candidates.svg"],
@@ -32,6 +34,7 @@ const why = [
       "Traditional email open rates are only 2.3%, so avoid sending emails that will likely go unnoticed.",
       "Are you wasting valuable in-house time cold calling candidates? Utilize redwigwam to engage actively interested workers instead.",
     ],
+    btnText: "Get Started",
   },
   {
     image: ASSETS["/right-work.svg"],
@@ -41,6 +44,7 @@ const why = [
       "Redwigwam can check applicants right to work as standard  with no extra cost",
       "Redwigwam can check applicants right to work as standard and with no extra cost. You can filters to only see workers who have the right to work in the UK. Allowing to move faster- see applicants who have already their right to work.",
     ],
+    btnText: "Let's Chat",
   },
 ];
 
@@ -94,9 +98,12 @@ export default function WhyRedwigwam() {
                 </div>
 
                 <div className="flex justify-center lg:justify-start">
-                  <a href="/get-started">
+                  <a
+                    href="https://savvycal.com/redwigwam/chat-with-redwigwam"
+                    target="_blank"
+                  >
                     <Button variant="default">
-                      Get Started
+                      {w.btnText}
                       <img
                         src={ASSETS["/arrow-right-white.svg"]}
                         alt=""
