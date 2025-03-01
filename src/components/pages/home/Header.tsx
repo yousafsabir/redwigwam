@@ -45,7 +45,6 @@ const professionals = [
 ] as const;
 
 export default function Header() {
-  console.log("Re render");
   return (
     <header className="relative min-h-[90vh] flex items-center overflow-hidden">
       <img
@@ -55,27 +54,15 @@ export default function Header() {
       />
 
       <div className="container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-16 items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl text-center md:text-left font-bold leading-[1.12] mb-6">
+            <h1 className="hidden md:block md:text-6xl font-bold leading-[1.12] mb-6">
               Connect
               <br />
               with Top Talent
               <br />
               in Minutes
             </h1>
-            <div className="mx-auto max-w-[350px] md:hidden relative grid grid-cols-3 gap-4 mb-8">
-              {mobileProfessionals.map((image) => (
-                <div className="rounded-2xl overflow-hidden" key={image}>
-                  <img
-                    src={ASSETS[image]}
-                    alt="Professional"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
             <p className="max-w-[75%] md:w-auto text-center md:text-left mx-auto md:mx-0 text-xl text-gray-700 mb-10">
               Discover how Redwigwam simplifies your hiring process. Our
               platform connects you with pre-vetted, flexible staff quickly and
@@ -127,15 +114,30 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="relative hidden md:block">
-            <img
-              src={ASSETS["/header-grid.svg"]}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover opacity-10"
-            />
+          <div className="flex-1">
+            <h1 className="text-5xl md:hidden text-center font-bold leading-[1.12] mb-6">
+              Connect
+              <br />
+              with Top Talent
+              <br />
+              in Minutes
+            </h1>
+            <div className="mx-auto max-w-[350px] md:hidden relative grid grid-cols-3 gap-4 mb-8">
+              {mobileProfessionals.map((image) => (
+                <div className="rounded-2xl overflow-hidden">
+                  <img
+                    src={ASSETS[image]}
+                    alt="Professional"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
             <div className="space-y-4">
               {professionals.map((p, i) => (
                 <Swiper
+                  className="hidden md:block"
                   key={i}
                   modules={[Autoplay]}
                   slidesPerView={3}
@@ -148,8 +150,11 @@ export default function Header() {
                   }}
                   speed={1700}
                   breakpoints={{
-                    1024: {
+                    1202: {
                       slidesPerView: 4,
+                    },
+                    1024: {
+                      slidesPerView: 3,
                     },
                   }}
                 >
