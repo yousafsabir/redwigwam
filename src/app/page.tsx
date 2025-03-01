@@ -1,7 +1,7 @@
 import Header from "@/components/pages/home/Header";
 import AllTools from "@/components/pages/home/AllTools";
 import WhyRedwigwam from "@/components/pages/home/WhyRedwigwam";
-import Blogs from "@/components/pages/home/Blogs";
+import CaseStudies from "@/components/pages/CaseStudies";
 import ReadyToHire from "@/components/pages/ReadyToHire";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <AllTools />
       <WhyRedwigwam />
-      <Blogs />
+      <CaseStudies />
       <ReadyToHire />
     </>
   );
