@@ -1,0 +1,130 @@
+import { ASSETS } from "@/lib/assets";
+import { Button } from "@/components/ui/button";
+
+const mobileProfessionals = [
+  "/professional-1.png",
+  "/professional-2.png",
+  "/professional-3.png",
+  "/professional-4.png",
+  "/professional-5.png",
+  "/professional-6.png",
+  "/professional-7.png",
+  "/professional-8.png",
+  "/professional-9.png",
+] as const;
+
+const professionals = [
+  "/professional-1.png",
+  "/professional-2.png",
+  "/professional-3.png",
+  "/professional-4.png",
+  "/professional-5.png",
+  "/professional-6.png",
+  "/professional-7.png",
+  "/professional-8.png",
+  "/professional-9.png",
+  "/professional-10.png",
+  "/professional-11.png",
+  "/professional-12.png",
+] as const;
+
+export default function Header() {
+  return (
+    <header className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <img
+        src={ASSETS["/header-bg.png"]}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+      />
+
+      <div className="container mx-auto px-4 py-20">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-2xl">
+            <h1 className="text-5xl md:text-6xl text-center md:text-left font-bold leading-[1.12] mb-6">
+              Connect
+              <br />
+              with Top Talent
+              <br />
+              in Minutes
+            </h1>
+            <div className="mx-auto max-w-[350px] md:hidden relative grid grid-cols-3 gap-4 mb-8">
+              {mobileProfessionals.map((image) => (
+                <div className="rounded-2xl overflow-hidden" key={image}>
+                  <img
+                    src={ASSETS[image]}
+                    alt="Professional"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+            <p className="max-w-[75%] md:w-auto text-center md:text-left mx-auto md:mx-0 text-xl text-gray-700 mb-10">
+              Discover how Redwigwam simplifies your hiring process. Our
+              platform connects you with pre-vetted, flexible staff quickly and
+              efficiently.
+            </p>
+            <div className="flex justify-center md:justify-start flex-wrap gap-4">
+              <a href="/demo">
+                <Button variant="default">
+                  Book A Demo
+                  <img
+                    src={ASSETS["/arrow-right-white.svg"]}
+                    alt=""
+                    className="w-5 h-5 transition-transform group-hover:translate-x-1"
+                  />
+                </Button>
+              </a>
+              <a href="/register">
+                <Button variant="outline">
+                  Register Now
+                  <img
+                    src={ASSETS["/arrow-right-black.svg"]}
+                    alt=""
+                    className="w-5 h-5 transition-transform group-hover:translate-x-1"
+                  />
+                </Button>
+              </a>
+            </div>
+            <div className="flex justify-center md:justify-start items-center gap-1 mt-8">
+              {[...Array(5)].map((i) => (
+                <img
+                  src={ASSETS["/star.svg"]}
+                  alt="star"
+                  className="w-6 h-6"
+                  key={i}
+                />
+              ))}
+              <img
+                src={ASSETS["/rating-company.png"]}
+                alt="Rating Company"
+                className="w-6 h-6 ml-4"
+              />
+              <span className="text-lg ml-2 font-medium">5 Star Rating</span>
+            </div>
+          </div>
+
+          <div className="relative hidden md:block">
+            <img
+              src={ASSETS["/header-grid.svg"]}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover opacity-10"
+            />
+            <div className="relative grid grid-cols-4 grid-rows-3 gap-4">
+              {professionals.map((image) => (
+                <div className="rounded-2xl overflow-hidden" key={image}>
+                  <img
+                    src={ASSETS[image]}
+                    alt="Professional"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}

@@ -1,24 +1,75 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Sidebar */
+/* Menu */
+.sidebar .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    position: sticky;
+    z-index: 50;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar .menu {
+        display: none;
+    }
+}
+.sidebar .line {
+    fill: none;
+    stroke: #0c0b0b;
+    stroke-width: 6;
+    transition:
+        stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.sidebar .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.sidebar .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.sidebar .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.sidebar .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.sidebar .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.sidebar .sidenav {
+    width: 100vw;
+    right: -100vw;
+    transition: right 0.6s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.sidebar .sidenav.active {
+    right: 0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Why Redwigwam */
+@media (max-width: 1024px) {
+    .why-section .main-image {
+        transform: scale(1) !important;
+    }
 }
