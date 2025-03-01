@@ -14,7 +14,7 @@ const pricingPlans = [
       "SMS access",
       "Access to Redwigwam workers",
     ],
-    link: "#",
+    link: "https://hirer.redwigwam.com/wizards/registration",
   },
   {
     mostPopular: true,
@@ -27,7 +27,7 @@ const pricingPlans = [
       "Job Board Distribution",
       "ATS Access",
     ],
-    link: "#",
+    link: "https://hirer.redwigwam.com/wizards/registration",
   },
   {
     mostPopular: false,
@@ -41,7 +41,7 @@ const pricingPlans = [
       "Right to work checks",
       "Unlimited SMS",
     ],
-    link: "#",
+    link: "https://hirer.redwigwam.com/wizards/registration",
   },
 ];
 

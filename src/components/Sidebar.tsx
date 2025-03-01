@@ -1,5 +1,11 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
 export default function Sidebar() {
@@ -47,24 +53,49 @@ export default function Sidebar() {
       >
         <div>
           <a
-            href="/about"
+            href="/about-us"
             className="text-app-gray-2 md:inline font-medium hover:opacity-75"
           >
             About Us
           </a>
         </div>
 
-        <div>
-          <button className="flex items-center gap-[5px] text-app-gray-2 font-medium hover:opacity-75">
-            For Job Seeker
-          </button>
-        </div>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="flex items-center gap-[5px] text-app-gray-2 font-medium">
+              For Job Seeker
+            </AccordionTrigger>
+            <AccordionContent className="flex flex-col space-y-2">
+              <a href="#">Sign up now</a>
+              <a href="#">Latest jobs</a>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
 
-        <div>
-          <button className="flex items-center gap-[5px] text-app-gray-2 font-medium hover:opacity-75">
-            For Employers
-          </button>
-        </div>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="flex items-center gap-[5px] text-app-gray-2 font-medium">
+              For Employers
+            </AccordionTrigger>
+            <AccordionContent className="flex flex-col space-y-2">
+              <a href="https://hirer.redwigwam.com/login/" target="_blank">
+                Hirer login
+              </a>
+              <a
+                href="https://hirer.redwigwam.com/wizards/registration"
+                target="_blank"
+              >
+                Hirer Sign up
+              </a>
+              <a
+                href="https://savvycal.com/redwigwam/chat-with-redwigwam"
+                target="_blank"
+              >
+                Book Demo
+              </a>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </div>
   );

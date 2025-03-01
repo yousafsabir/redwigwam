@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { ASSETS } from "@/lib/assets";
 import {
   DropdownMenu,
@@ -10,7 +9,7 @@ import {
 export function JobSeekersDropdown() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex items-center gap-2">
+      <DropdownMenuTrigger className="flex items-center gap-2 focus:outline-none">
         For Job Seeker
         <img src={ASSETS["/angle-down.svg"]} alt="" className="w-4 h-4" />
       </DropdownMenuTrigger>
@@ -29,7 +28,7 @@ export function JobSeekersDropdown() {
 export function EmployersDropdown() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex items-center gap-2">
+      <DropdownMenuTrigger className="flex items-center gap-2 focus:outline-none">
         For Employers
         <img src={ASSETS["/angle-down.svg"]} alt="" className="w-4 h-4" />
       </DropdownMenuTrigger>

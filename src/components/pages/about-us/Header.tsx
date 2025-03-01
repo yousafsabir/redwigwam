@@ -20,7 +20,10 @@ export default function () {
           Effortlessly Connect with Qualified Hourly Workers and Streamline Your
           Staffing Process
         </p>
-        <a href="/demo">
+        <a
+          href="https://savvycal.com/redwigwam/chat-with-redwigwam"
+          target="_blank"
+        >
           <Button>
             Book A Demo
             <img
