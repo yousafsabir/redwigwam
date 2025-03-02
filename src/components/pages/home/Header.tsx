@@ -122,7 +122,7 @@ export default function Header() {
               <br />
               in Minutes
             </h1>
-            {/* <div className="mx-auto max-w-[350px] md:hidden relative grid grid-cols-3 gap-4 mb-8">
+            <div className="mx-auto max-w-[350px] md:hidden relative grid grid-cols-3 gap-4 mb-8">
               {mobileProfessionals.map((image) => (
                 <div className="rounded-2xl overflow-hidden" key={image}>
                   <img
@@ -133,11 +133,11 @@ export default function Header() {
                   />
                 </div>
               ))}
-            </div> */}
+            </div>
             <div className="space-y-4">
               {professionals.map((p, i) => (
                 <Swiper
-                  // className="hidden md:block"
+                  className="hidden md:block"
                   key={i}
                   modules={[Autoplay]}
                   slidesPerView={3}
