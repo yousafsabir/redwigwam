@@ -71,7 +71,7 @@ export default function () {
               <input
                 type="email"
                 placeholder="Your Email Here"
-                className="flex-1 px-6 py-3 rounded-[10px] border border-app-red focus:outline-none text-app-gray-3 placeholder:text-app-gray-3"
+                className="flex-1 px-6 py-3 w-[150px] rounded-[10px] border border-app-red focus:outline-none text-app-gray-3 placeholder:text-app-gray-3"
               />
               <Button>
                 Join
