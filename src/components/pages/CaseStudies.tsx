@@ -2,10 +2,9 @@
 
 import { ASSETS } from "@/lib/assets";
 
-import { useState, useRef, type ComponentRef } from "react";
+import { useState, type ComponentRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, FreeMode, Thumbs, Mousewheel } from "swiper/modules";
-import type { NavigationOptions } from "swiper/types";
 
 import {
   Dialog,
@@ -31,9 +30,6 @@ interface CaseStudy {
 }
 
 export default function CaseStudies() {
-  const swiperPrevBtnRef = useRef<ComponentRef<"button">>(null);
-  const swiperNextBtnRef = useRef<ComponentRef<"button">>(null);
-
   const [currentCaseStudy, setCurrentCaseStudy] = useState<number | null>(null);
 
   const caseStudies: Array<CaseStudy> = [
@@ -122,13 +118,12 @@ export default function CaseStudies() {
   return (
     <section className="py-24">
       <div className="container">
-        <div className="flex items-center justify-between mb-16">
-          <h2 className="text-5xl font-medium">Case Studies</h2>
-          <div className="flex gap-4">
-            <button
-              className="blog-prev w-12 h-12 rounded-full border border-[#5A5A5A] text-[#5A5A5A] flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors group"
-              ref={swiperPrevBtnRef}
-            >
+        <div className="flex items-center justify-center sm:justify-between mb-16">
+          <h2 className="text-5xl text-center sm:text-left font-medium">
+            Case Studies
+          </h2>
+          <div className="hidden sm:flex gap-4">
+            <button className="blog-prev w-12 h-12 rounded-full border border-[#5A5A5A] text-[#5A5A5A] flex items-center justify-center hover:!bg-black hover:!text-white hover:!border-black transition-colors group">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -152,10 +147,7 @@ export default function CaseStudies() {
                 ></path>
               </svg>
             </button>
-            <button
-              className="blog-next w-12 h-12 rounded-full border border-[#5A5A5A] text-[#5A5A5A] flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors group"
-              ref={swiperNextBtnRef}
-            >
+            <button className="blog-next w-12 h-12 rounded-full border border-[#5A5A5A] text-[#5A5A5A] flex items-center justify-center hover:!bg-black hover:!text-white hover:!border-black transition-colors group">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -192,14 +184,8 @@ export default function CaseStudies() {
             disableOnInteraction: false,
           }}
           navigation={{
-            prevEl: swiperPrevBtnRef.current,
-            nextEl: swiperNextBtnRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            (swiper.params.navigation as NavigationOptions).prevEl =
-              swiperPrevBtnRef.current;
-            (swiper.params.navigation as NavigationOptions).nextEl =
-              swiperNextBtnRef.current;
+            prevEl: ".blog-prev",
+            nextEl: ".blog-next",
           }}
           breakpoints={{
             640: {
@@ -244,6 +230,57 @@ export default function CaseStudies() {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <div className="flex justify-center sm:hidden gap-3">
+          <button className="blog-prev w-12 h-12 rounded-full border border-[#5A5A5A] text-[#5A5A5A] flex items-center justify-center hover:!bg-black hover:!text-white hover:!border-black transition-colors group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="none"
+            >
+              <path
+                d="M3.99982 11.9998L19.9998 11.9998"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M8.99963 17C8.99963 17 3.99968 13.3176 3.99966 12C3.99965 10.6824 8.99966 7 8.99966 7"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button className="blog-next w-12 h-12 rounded-full border border-[#5A5A5A] text-[#5A5A5A] flex items-center justify-center hover:!bg-black hover:!text-white hover:!border-black transition-colors group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="none"
+            >
+              <path
+                d="M20.0001 11.9998L4.00012 11.9998"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
       <CaseStudyModal
         open={currentCaseStudy}
