@@ -53,8 +53,8 @@ export default function Header() {
         className="absolute inset-0 w-full h-full object-cover -z-10"
       />
 
-      <div className="container mx-auto px-4 py-20">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto px-5 py-20">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-16 items-center">
           <div className="max-w-2xl">
             <h1 className="hidden md:block md:text-6xl font-bold leading-[1.12] mb-6">
               Connect
@@ -122,15 +122,17 @@ export default function Header() {
               <br />
               in Minutes
             </h1>
-            <div className="mx-auto max-w-[350px] md:hidden relative grid grid-cols-3 gap-4 mb-8">
+            <div className="mx-auto max-w-[300px] min-[400px]:max-w-[350px] md:hidden relative grid grid-cols-3 gap-2 min-[400px]:gap-4 mb-8">
               {mobileProfessionals.map((image) => (
-                <div className="rounded-2xl overflow-hidden" key={image}>
-                  <img
-                    src={ASSETS[image]}
-                    alt="Professional"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+                <div className="flex justify-center" key={image}>
+                  <div className="max-[400px]:w-[75px] rounded-2xl overflow-hidden">
+                    <img
+                      src={ASSETS[image]}
+                      alt="Professional"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
