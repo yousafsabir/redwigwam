@@ -13,12 +13,12 @@ export function JobSeekersDropdown() {
         For Job Seeker
         <img src={ASSETS["/angle-down.svg"]} alt="" className="w-4 h-4" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-white rounded-xl">
-        <DropdownMenuItem>
+      <DropdownMenuContent className="bg-white rounded-xl p-3">
+        <DropdownMenuItem className="text-base hover:underline">
           <a href="#">Sign up now</a>
         </DropdownMenuItem>
-        <DropdownMenuItem>
-          <a href="#">Latest jobs</a>
+        <DropdownMenuItem className="text-base hover:underline">
+          <a href="https://www.redwigwam.com/jobs/">Latest jobs</a>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
@@ -32,13 +32,13 @@ export function EmployersDropdown() {
         For Employers
         <img src={ASSETS["/angle-down.svg"]} alt="" className="w-4 h-4" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-white rounded-xl">
-        <DropdownMenuItem>
+      <DropdownMenuContent className="bg-white rounded-xl p-3">
+        <DropdownMenuItem className="text-base hover:underline">
           <a href="https://hirer.redwigwam.com/login/" target="_blank">
             Hirer login
           </a>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        <DropdownMenuItem className="text-base hover:underline">
           <a
             href="https://hirer.redwigwam.com/wizards/registration"
             target="_blank"
@@ -46,7 +46,7 @@ export function EmployersDropdown() {
             Hirer Sign up
           </a>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        <DropdownMenuItem className="text-base hover:underline">
           <a
             href="https://savvycal.com/redwigwam/chat-with-redwigwam"
             target="_blank"
