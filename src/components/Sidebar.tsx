@@ -47,11 +47,11 @@ export default function Sidebar() {
       </button>
       <div
         className={cn(
-          "sidenav z-40 fixed top-0 bottom-0 bg-white flex flex-col justify-center items-center gap-8",
+          "sidenav z-40 fixed top-0 bottom-0 bg-white flex flex-col justify-center items-center",
           sidebarOpen && "active",
         )}
       >
-        <div>
+        <div className="mb-6">
           <a
             href="/about-us"
             className="text-app-gray-2 md:inline font-medium hover:opacity-75"
@@ -60,24 +60,24 @@ export default function Sidebar() {
           </a>
         </div>
 
-        <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="flex items-center gap-[5px] text-app-gray-2 font-medium">
+        <Accordion type="single" collapsible className="mb-2">
+          <AccordionItem value="item-1" className="border-none">
+            <AccordionTrigger className="flex items-center gap-[5px] text-base text-app-gray-2 font-medium pt-0">
               For Job Seeker
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col space-y-2">
+            <AccordionContent className="flex flex-col items-center space-y-2 border-b">
               <a href="#">Sign up now</a>
-              <a href="#">Latest jobs</a>
+              <a href="https://www.redwigwam.com/jobs/">Latest jobs</a>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
 
         <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="flex items-center gap-[5px] text-app-gray-2 font-medium">
+          <AccordionItem value="item-2" className="border-none">
+            <AccordionTrigger className="flex items-center gap-[5px] text-base text-app-gray-2 font-medium pt-0">
               For Employers
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col space-y-2">
+            <AccordionContent className="flex flex-col items-center space-y-2 border-b">
               <a href="https://hirer.redwigwam.com/login/" target="_blank">
                 Hirer login
               </a>
