@@ -308,7 +308,7 @@ function CaseStudyModal(props: {
         v ? props.onOpenChange(props.open) : props.onOpenChange(null);
       }}
     >
-      <DialogContent className="bg-white !pt-10 !rounded-2xl">
+      <DialogContent className="bg-white max-w-[300px] min-[400px]:max-w-xs sm:max-w-lg max-h-[70vh] overflow-y-scroll !pt-10 !rounded-2xl">
         <DialogHeader>
           <DialogTitle className="text-2xl text-center mb-6">
             {props.modal?.title}
