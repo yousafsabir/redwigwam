@@ -123,7 +123,7 @@ export default function CaseStudies() {
     <section className="py-24">
       <div className="container">
         <div className="flex items-center justify-between mb-16">
-          <h2 className="text-5xl font-medium">Latest Blog</h2>
+          <h2 className="text-5xl font-medium">Case Studies</h2>
           <div className="flex gap-4">
             <button
               className="blog-prev w-12 h-12 rounded-full border border-[#5A5A5A] text-[#5A5A5A] flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors group"
