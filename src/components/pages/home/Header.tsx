@@ -85,11 +85,10 @@ export default function Header() {
                 />
               ))}
               <img
-                src={ASSETS["/rating-company.png"]}
+                src={ASSETS["/trustpilot.svg"]}
                 alt="Rating Company"
-                className="w-6 h-6 ml-4"
+                className="h-7 ml-2"
               />
-              <span className="text-lg ml-2 font-medium">5 Star Rating</span>
             </div>
           </div>
 
