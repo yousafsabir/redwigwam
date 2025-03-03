@@ -2,14 +2,13 @@
 
 import { ASSETS } from "@/lib/assets";
 
-import { useState, type ComponentRef } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, FreeMode, Thumbs, Mousewheel } from "swiper/modules";
 
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
