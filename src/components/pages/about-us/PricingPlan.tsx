@@ -6,7 +6,7 @@ const pricingPlans = [
     mostPopular: false,
     title: "Pay as you go",
     pricing: "£12",
-    period: "per day",
+    period: "per job posted",
 
     benefits: [
       "Per Job Posted",
@@ -83,7 +83,6 @@ export default function PricingPlan() {
                 <span className="text-4xl font-medium">{plan.pricing}</span>
                 <span className="text-gray-600">/{plan.period}</span>
               </div>
-              <p className="text-gray-600 mb-8">*when billed yearly</p>
               <a href={plan.link} className="block mb-6">
                 <Button
                   variant={plan.mostPopular ? "default" : "outline"}
