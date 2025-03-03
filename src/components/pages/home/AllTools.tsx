@@ -34,9 +34,9 @@ export default function AllTools() {
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 sm:gap-32 md:gap-16 items-center">
           <h2 className="lg:hidden text-4xl text-center lg:text-left font-semibold leading-[1.12] text-app-gray-3 mb-[14px]">
-            All Tools You Need To
+            All-in-One Hiring Solution
             <br />
-            Make Smart Hiring Decisions
+            Built for Speed
           </h2>
           <div className="relative">
             <img
@@ -49,14 +49,13 @@ export default function AllTools() {
 
           <div className="max-w-2xl">
             <h2 className="hidden lg:block text-4xl text-center lg:text-left font-semibold leading-[1.12] text-app-gray-3 mb-[14px]">
-              All Tools You Need To
+              All-in-One Hiring Solution
               <br />
-              Make Smart Hiring Decisions
+              Built for Speed
             </h2>
             <p className="text-base text-center lg:text-left text-app-gray-2 leading-[1.12] font-normal mb-8">
-              Discover how Redwigwam simplifies your hiring process. Our
-              platform connects you with pre-vetted, flexible staff quickly and
-              efficiently.
+              Post a job, chat with workers, and scale your team effortlessly.
+              No long-term commitments, just flexible hiring that works.
             </p>
 
             <div className="w-full h-[1px] bg-[#D9D9D9] mb-8"></div>
