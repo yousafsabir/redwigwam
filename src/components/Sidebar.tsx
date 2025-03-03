@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect, useRef } from "react";
 import {
   Accordion,
@@ -13,7 +14,7 @@ export default function Sidebar() {
   const body = useRef<HTMLBodyElement>(null);
 
   useEffect(() => {
-    if (window) {
+    if (typeof window !== "undefined") {
       body.current = window.document.querySelector("body");
     }
   }, []);

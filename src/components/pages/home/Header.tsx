@@ -6,43 +6,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 const mobileProfessionals = [
-  "/professional-1.png",
-  "/professional-2.png",
-  "/professional-3.png",
-  "/professional-4.png",
-  "/professional-5.png",
-  "/professional-6.png",
-  "/professional-7.png",
-  "/professional-8.png",
-  "/professional-9.png",
-] as const;
+  "/p1.png",
+  "/p2.png",
+  "/p3.png",
+  "/p4.png",
+  "/p5.png",
+  "/p6.png",
+  "/p7.png",
+  "/p8.png",
+  "/p9.png",
+] as Array<keyof typeof ASSETS>;
 
 const professionals = [
-  [
-    "/professional-1.png",
-    "/professional-2.png",
-    "/professional-3.png",
-    "/professional-4.png",
-    "/professional-11.png",
-    "/professional-12.png",
-  ],
-  [
-    "/professional-5.png",
-    "/professional-6.png",
-    "/professional-7.png",
-    "/professional-8.png",
-    "/professional-4.png",
-    "/professional-3.png",
-  ],
-  [
-    "/professional-9.png",
-    "/professional-10.png",
-    "/professional-11.png",
-    "/professional-12.png",
-    "/professional-1.png",
-    "/professional-2.png",
-  ],
-] as const;
+  ["/p1.png", "/p2.png", "/p3.png", "/p4.png", "/p5.png", "/p6.png"],
+  ["/p7.png", "/p8.png", "/p9.png", "/p10.png", "/p11.png", "/p12.png"],
+  ["/p13.png", "/p14.png", "/p15.png", "/p16.png", "/p17.png", "/p18.png"],
+] as Array<Array<keyof typeof ASSETS>>;
 
 export default function Header() {
   return (

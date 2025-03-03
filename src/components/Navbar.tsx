@@ -4,7 +4,6 @@ import {
   JobSeekersDropdown,
   EmployersDropdown,
 } from "@/components/NavDropdowns";
-import { Joan } from "next/font/google";
 
 export default function Navbar() {
   return (
