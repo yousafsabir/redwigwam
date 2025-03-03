@@ -13,9 +13,9 @@ export default function KeyBenefits() {
       <div className="container">
         <div className="max-w-2xl mb-16">
           <h2 className="text-5xl font-medium mb-6">
-            Discover key benefits of
+            Why Businesses Choose
             <br />
-            Redwigwam staffing.
+            Redwigwam
           </h2>
           <p className="text-xl text-gray-700">
             Discover how Redwigwam simplifies your hiring process. Our platform
@@ -37,8 +37,7 @@ export default function KeyBenefits() {
               Just Book Qualified Workers
             </h3>
             <p className="text-gray-700">
-              Instantly access a pool of pre-vetted workers, making it easy to
-              book qualified talent for your business needs.
+              Book pre-vetted workers instantly—no hassle, no delays.
             </p>
           </div>
 
@@ -52,8 +51,7 @@ export default function KeyBenefits() {
             </div>
             <h3 className="text-2xl font-medium mb-4">Responsive Candidates</h3>
             <p className="text-gray-700">
-              Receive quick responses from candidates ready to take on your job
-              openings, ensuring no delays in your staffing process.
+              90% of workers respond within 5 minutes—fill shifts faster.
             </p>
           </div>
 
@@ -69,9 +67,7 @@ export default function KeyBenefits() {
               Find Qualified Workers
             </h3>
             <p className="text-gray-700">
-              Our platform matches your business with workers who have the right
-              skills, experience, and qualifications for your specific job
-              requirements.
+              Get the right workers, with the right skills, at the right time.
             </p>
           </div>
 
@@ -87,9 +83,7 @@ export default function KeyBenefits() {
               Right to Work Compliance
             </h3>
             <p className="text-gray-700">
-              Ensure all your hires meet legal requirements with our built-in
-              Right to Work compliance feature, saving you time and reducing
-              risks.
+              We handle Right to Work checks—hire faster, stay compliant.
             </p>
           </div>
         </div>
