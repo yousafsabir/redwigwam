@@ -34,10 +34,10 @@ export default function CaseStudies() {
   const caseStudies: Array<CaseStudy> = [
     {
       id: 1,
-      title: "How we delivered 6500 +hrs in 3 weeks for set",
+      title: "6,500+ Hours of Staffing Delivered in 3 Weeks – Here’s How",
       tag: "development",
       image: ASSETS["/blog-1.svg"],
-      publishedAt: "May 08, 2024",
+      publishedAt: "Dec, 2025",
       modal: {
         title: "Delivering 6,500+ Hours of Work in 3 Weeks for Deeset",
         challenge:
@@ -50,10 +50,10 @@ export default function CaseStudies() {
     },
     {
       id: 2,
-      title: "2000 applicants and national coverage",
+      title: "How We Reached 2,000 Applicants Across the UK",
       tag: "development",
       image: ASSETS["/blog-2.svg"],
-      publishedAt: "May 08, 2024",
+      publishedAt: "May, 2024",
       modal: {
         title: "Powering National Market Research with Central Fieldwork",
         challenge:
@@ -66,10 +66,10 @@ export default function CaseStudies() {
     },
     {
       id: 3,
-      title: "How we automatically help logistics people ",
-      tag: "development",
+      title: "Automating Logistics Staffing for Faster Hiring",
+      tag: "logistics",
       image: ASSETS["/blog-3.svg"],
-      publishedAt: "May 08, 2024",
+      publishedAt: "June, 2023",
       modal: {
         title: "Automating Job Fulfilment for a Leading Logistics Provider",
         challenge:
@@ -82,10 +82,10 @@ export default function CaseStudies() {
     },
     {
       id: 4,
-      title: "Seasonal staff with siamo ",
-      tag: "development",
+      title: "Scaling Up Seasonal Hiring with Siamo",
+      tag: "warehouse",
       image: ASSETS["/blog-1.svg"],
-      publishedAt: "May 08, 2024",
+      publishedAt: "May, 2024",
       modal: {
         title: "Seasonal Warehouse Staffing for Siamo",
         challenge:
@@ -98,10 +98,10 @@ export default function CaseStudies() {
     },
     {
       id: 5,
-      title: "Need a product off the shelf discretly? ",
-      tag: "development",
+      title: "FMCG visits and national recalls",
+      tag: "retail",
       image: ASSETS["/blog-2.svg"],
-      publishedAt: "May 08, 2024",
+      publishedAt: "August, 2024",
       modal: {
         title: "Rapid Nationwide Product Recall in Under a Week",
         challenge:
