@@ -1,110 +1,75 @@
 export const ASSETS = {
-  "/all-bookmark-white.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466534/all-bookmark-white_hu6cpq.svg",
-  "/all-tools.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466536/all-tools_rpgodi.svg",
-  "/all-tools-bg.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466535/all-tools-bg_qodp69.png",
-  "/angle-down.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466535/angle-down_anwpbm.svg",
-  "/arrow-right-black.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466534/arrow-right-black_xx2zhz.svg",
-  "/arrow-right-white.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466534/arrow-right-white_kxfnje.svg",
-  "/blog-1.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466538/blog-1_h9kmgc.svg",
-  "/blog-2.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466539/blog-2_ickiue.svg",
-  "/blog-3.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466535/blog-3_ly60nn.svg",
-  "/case-studies-bg.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466540/case-studies-bg_odwkgw.png",
-  "/checkmark-circle-black.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466540/checkmark-circle-black_omma8a.svg",
-  "/checkmark-red.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740662246/checkmark-red_vuinof.svg",
-  "/comment-white.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466535/comment-white_uuqkyb.svg",
-  "/contact-us-header-bg.jpg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740549447/contact-us-header-bg_yyb0qp.jpg",
-  "/drag-right-white.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466540/drag-right-white_pakml8.svg",
-  "/facebook-black.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466536/facebook-black_rpnrw6.svg",
-  "/favicon.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740467843/favicon_yak2bd.png",
-  "/header-bg.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466542/header-bg_pkocht.png",
-  "/header-grid.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466536/header-grid_dcxyhh.svg",
-  "/how-it-works-bg.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466538/how-it-works-bg_zgtpt5.png",
-  "/instagram-black.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466537/instagram-black_afgwh9.svg",
-  "/job-search-white.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466541/job-search-white_efsbcm.svg",
-  "/key-benefits-bg.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466538/key-benefits-bg_wxo33y.png",
-  "/link-white.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466538/link-white_lf9dlc.svg",
-  "/linkedin-black.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466538/linkedin-black_o9jgua.svg",
-  "/logo.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466539/logo_iejeca.svg",
-  "/manager-white.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466539/manager-white_cidnex.png",
-  "/placeholder-logo.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466541/placeholder-logo_rjyfko.svg",
-  "/pricing-bg.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466539/pricing-bg_trg5lo.png",
-  "/professional-1.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466540/professional-1_ddlzxc.png",
-  "/professional-2.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466540/professional-2_xxnc5b.png",
-  "/professional-3.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466541/professional-3_juipvp.png",
-  "/professional-4.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466541/professional-4_rbifjq.png",
-  "/professional-5.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466543/professional-5_u3nf2i.png",
-  "/professional-6.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466544/professional-6_taejdm.png",
-  "/professional-7.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466544/professional-7_stbaqv.png",
-  "/professional-8.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466545/professional-8_r5tfcm.png",
-  "/professional-9.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466546/professional-9_x6lup8.png",
-  "/professional-10.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466546/professional-10_n08t5c.png",
-  "/professional-11.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466546/professional-11_oqozwl.png",
-  "/professional-12.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466547/professional-12_vucjpi.png",
-  "/qualified-workers.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466547/qualified-workers_mexpof.svg",
-  "/rating-company.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466548/rating-company_bhbiel.png",
-  "/ready-to-hire.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466549/ready-to-hire_jqrpxh.svg",
-  "/ready-to-hire-bg.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740548164/ready-to-hire-bg_jqcmmf.png",
-  "/responsive-candidates.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466549/responsive-candidates_j52xxt.svg",
-  "/review-profile-1.png":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466549/review-profile-1_gw53r2.png",
-  "/right-work.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466550/right-work_udtbwn.svg",
-  "/search-white.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466550/search-white_tkzfc0.svg",
-  "/star.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466550/star_abxrml.svg",
-  "/twitter-black.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466551/twitter-black_qbpz5v.svg",
-  "/why-image.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740466551/why-image_apfoyy.svg",
-  "/youtube-black.svg":
-    "https://res.cloudinary.com/yousafsabir/image/upload/v1740859070/youtube-black_y2dgvh.svg",
+  "/all-bookmark-white.svg": "/all-bookmark-white.svg",
+  "/all-tools-bg.png": "/all-tools-bg.png",
+  "/all-tools.svg": "/all-tools.svg",
+  "/angle-down.svg": "/angle-down.svg",
+  "/arrow-right-black.svg": "/arrow-right-black.svg",
+  "/arrow-right-white.svg": "/arrow-right-white.svg",
+  "/blog-1.svg": "/blog-1.svg",
+  "/blog-2.svg": "/blog-2.svg",
+  "/blog-3.svg": "/blog-3.svg",
+  "/case-studies-bg.png": "/case-studies-bg.png",
+  "/checkmark-circle-black.svg": "/checkmark-circle-black.svg",
+  "/checkmark-red.svg": "/checkmark-red.svg",
+  "/comment-white.svg": "/comment-white.svg",
+  "/contact-us-header-bg.jpg": "/contact-us-header-bg.jpg",
+  "/drag-right-white.svg": "/drag-right-white.svg",
+  "/facebook-black.svg": "/facebook-black.svg",
+  "/favicon.png": "/favicon.png",
+  "/header-bg.png": "/header-bg.png",
+  "/header-grid.svg": "/header-grid.svg",
+  "/how-it-works-bg.png": "/how-it-works-bg.png",
+  "/instagram-black.svg": "/instagram-black.svg",
+  "/job-search-white.svg": "/job-search-white.svg",
+  "/key-benefits-bg.png": "/key-benefits-bg.png",
+  "/link-white.svg": "/link-white.svg",
+  "/linkedin-black.svg": "/linkedin-black.svg",
+  "/logo.svg": "/logo.svg",
+  "/manager-white.png": "/manager-white.png",
+  "/p1.png": "/p1.png",
+  "/p10.png": "/p10.png",
+  "/p11.png": "/p11.png",
+  "/p12.png": "/p12.png",
+  "/p13.png": "/p13.png",
+  "/p14.png": "/p14.png",
+  "/p15.png": "/p15.png",
+  "/p16.png": "/p16.png",
+  "/p17.png": "/p17.png",
+  "/p18.png": "/p18.png",
+  "/p19.png": "/p19.png",
+  "/p2.png": "/p2.png",
+  "/p20.png": "/p20.png",
+  "/p3.png": "/p3.png",
+  "/p4.png": "/p4.png",
+  "/p5.png": "/p5.png",
+  "/p6.png": "/p6.png",
+  "/p7.png": "/p7.png",
+  "/p8.png": "/p8.png",
+  "/p9.png": "/p9.png",
+  "/placeholder-logo.svg": "/placeholder-logo.svg",
+  "/pricing-bg.png": "/pricing-bg.png",
+  "/professional-1.png": "/professional-1.png",
+  "/professional-10.png": "/professional-10.png",
+  "/professional-11.png": "/professional-11.png",
+  "/professional-12.png": "/professional-12.png",
+  "/professional-2.png": "/professional-2.png",
+  "/professional-3.png": "/professional-3.png",
+  "/professional-4.png": "/professional-4.png",
+  "/professional-5.png": "/professional-5.png",
+  "/professional-6.png": "/professional-6.png",
+  "/professional-7.png": "/professional-7.png",
+  "/professional-8.png": "/professional-8.png",
+  "/professional-9.png": "/professional-9.png",
+  "/qualified-workers.svg": "/qualified-workers.svg",
+  "/rating-company.png": "/rating-company.png",
+  "/ready-to-hire-bg.png": "/ready-to-hire-bg.png",
+  "/ready-to-hire.svg": "/ready-to-hire.svg",
+  "/responsive-candidates.svg": "/responsive-candidates.svg",
+  "/review-profile-1.png": "/review-profile-1.png",
+  "/right-work.svg": "/right-work.svg",
+  "/search-white.svg": "/search-white.svg",
+  "/star.svg": "/star.svg",
+  "/twitter-black.svg": "/twitter-black.svg",
+  "/why-image.svg": "/why-image.svg",
+  "/youtube-black.svg": "/youtube-black.svg",
 } as const;
-
-export type AssetKey = keyof typeof ASSETS;
