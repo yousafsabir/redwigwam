@@ -35,7 +35,7 @@ export default function CaseStudies() {
     {
       id: 1,
       title: "6,500+ Hours of Staffing Delivered in 3 Weeks – Here’s How",
-      tag: "development",
+      tag: "retail",
       image: ASSETS["/blog-1.svg"],
       publishedAt: "Dec, 2025",
       modal: {
@@ -51,7 +51,7 @@ export default function CaseStudies() {
     {
       id: 2,
       title: "How We Reached 2,000 Applicants Across the UK",
-      tag: "development",
+      tag: "field marketing",
       image: ASSETS["/blog-2.svg"],
       publishedAt: "May, 2024",
       modal: {
