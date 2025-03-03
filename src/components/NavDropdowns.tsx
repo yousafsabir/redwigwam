@@ -10,7 +10,7 @@ export function JobSeekersDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center gap-2 focus:outline-none">
-        For Job Seeker
+        Job Seekers
         <img src={ASSETS["/angle-down.svg"]} alt="" className="w-4 h-4" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-white rounded-xl p-3">

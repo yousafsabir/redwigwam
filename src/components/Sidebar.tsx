@@ -64,7 +64,7 @@ export default function Sidebar() {
         <Accordion type="single" collapsible className="mb-2">
           <AccordionItem value="item-1" className="border-none">
             <AccordionTrigger className="flex items-center gap-[5px] text-base text-app-gray-2 font-medium pt-0">
-              For Job Seeker
+              Job Seekers
             </AccordionTrigger>
             <AccordionContent className="flex flex-col items-center space-y-2 border-b">
               <a href="#">Sign up now</a>
