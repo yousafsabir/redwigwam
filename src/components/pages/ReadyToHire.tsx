@@ -62,10 +62,10 @@ export default function () {
             />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl p-8 shadow-lg max-w-md w-full">
               <h3 className="text-3xl font-medium mb-2">
-                The #1Home For Hourly Workers
+                The #1 Home For Hourly Workers
               </h3>
               <p className="text-gray-700">
-                Acess The UK's Latgets Network Of Hourly Paid Works
+                Access The UK's Largest Network Of Hourly Paid Workers
               </p>
             </div>
           </div>
