@@ -87,7 +87,7 @@ export default function Header() {
               <img
                 src={ASSETS["/trustpilot.svg"]}
                 alt="Rating Company"
-                className="h-7 ml-2"
+                className="h-7 w-[115px] ml-2"
               />
             </div>
           </div>
