@@ -76,7 +76,7 @@ export default function Header() {
               </a>
             </div>
             <div className="flex justify-center md:justify-start items-center gap-1 mt-8">
-              {[...Array(5)].map((i) => (
+              {[...Array(4)].map((i) => (
                 <img
                   src={ASSETS["/star.svg"]}
                   alt="star"
@@ -84,6 +84,11 @@ export default function Header() {
                   key={i}
                 />
               ))}
+              <img
+                src={ASSETS["/star-white.svg"]}
+                alt="star"
+                className="w-6 h-6"
+              />
               <img
                 src={ASSETS["/trustpilot.svg"]}
                 alt="Rating Company"

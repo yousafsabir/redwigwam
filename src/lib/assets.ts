@@ -69,6 +69,7 @@ export const ASSETS = {
   "/right-work.svg": "/right-work.svg",
   "/search-white.svg": "/search-white.svg",
   "/star.svg": "/star.svg",
+  "/star-white.svg": "/star-white.svg",
   "/trustpilot.svg": "/trustpilot.svg",
   "/twitter-black.svg": "/twitter-black.svg",
   "/why-image.svg": "/why-image.svg",
