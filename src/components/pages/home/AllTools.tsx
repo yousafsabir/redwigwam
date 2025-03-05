@@ -40,7 +40,7 @@ export default function AllTools() {
           </h2>
           <div className="relative">
             <img
-              src={ASSETS["/all-tools.svg"]}
+              src={ASSETS["/all-tools"]}
               alt="Workflow Diagram"
               className="w-full"
               loading="lazy"

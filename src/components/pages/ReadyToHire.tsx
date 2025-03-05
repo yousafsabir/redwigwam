@@ -55,7 +55,7 @@ export default function () {
 
           <div className="relative">
             <img
-              src={ASSETS["/ready-to-hire.svg"]}
+              src={ASSETS["/ready-to-hire"]}
               alt="Ready to Hire"
               className="w-full"
               loading="lazy"

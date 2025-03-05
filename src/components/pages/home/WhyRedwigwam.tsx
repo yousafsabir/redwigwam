@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const why = [
   {
-    image: ASSETS["/why-image.svg"],
+    image: ASSETS["/job-board"],
     imageScale: 1.7,
     title: "Job Board Distribution",
     points: [
@@ -15,7 +15,7 @@ const why = [
     btnText: "Get Started",
   },
   {
-    image: ASSETS["/qualified-workers.svg"],
+    image: ASSETS["/qualified-workers"],
     imageScale: 1.5,
     title: "Find Qualified Workers",
     points: [
@@ -26,7 +26,7 @@ const why = [
     btnText: "Book Demo",
   },
   {
-    image: ASSETS["/responsive-candidates.svg"],
+    image: ASSETS["/responsive-candidates"],
     imageScale: 1.45,
     title: "Responsive Candidates",
     points: [
@@ -37,7 +37,7 @@ const why = [
     btnText: "Get Started",
   },
   {
-    image: ASSETS["/right-work.svg"],
+    image: ASSETS["/right-to-work"],
     imageScale: 1.4,
     title: "Right to Work",
     points: [

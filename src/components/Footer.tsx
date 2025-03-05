@@ -53,11 +53,7 @@ export default function () {
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           <div>
-            <img
-              src={ASSETS["/logo.svg"]}
-              alt="Redwigwam"
-              className="h-8 mb-4"
-            />
+            <img src={ASSETS["/logo"]} alt="Redwigwam" className="h-8 mb-4" />
             <h2 className="text-[18px] font-medium mb-4">
               Stay informed with our latest news and offers
             </h2>
