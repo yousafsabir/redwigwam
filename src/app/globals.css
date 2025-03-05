@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+    -webkit-animation: unset !important;
+    -o-animation: unset !important;
+    animation: unset !important;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+        /* CSS specific to iOS Safari */
+        img {
+            transform: translateZ(0); /* or another property */
+        }
+    }
+}
+
 /* Sidebar */
 /* Menu */
 .sidebar .menu {

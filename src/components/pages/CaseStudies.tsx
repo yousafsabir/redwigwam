@@ -36,7 +36,7 @@ export default function CaseStudies() {
       id: 1,
       title: "6,500+ Hours of Staffing Delivered in 3 Weeks – Here’s How",
       tag: "retail",
-      image: ASSETS["/blog-1.svg"],
+      image: ASSETS["/cs-1.png"],
       publishedAt: "Dec, 2025",
       modal: {
         title: "Delivering 6,500+ Hours of Work in 3 Weeks for Deeset",
@@ -52,7 +52,7 @@ export default function CaseStudies() {
       id: 2,
       title: "How We Reached 2,000 Applicants Across the UK",
       tag: "field marketing",
-      image: ASSETS["/blog-2.svg"],
+      image: ASSETS["/cs-2.png"],
       publishedAt: "May, 2024",
       modal: {
         title: "Powering National Market Research with Central Fieldwork",
@@ -68,7 +68,7 @@ export default function CaseStudies() {
       id: 3,
       title: "Automating Logistics Staffing for Faster Hiring",
       tag: "logistics",
-      image: ASSETS["/blog-3.svg"],
+      image: ASSETS["/cs-3.png"],
       publishedAt: "June, 2023",
       modal: {
         title: "Automating Job Fulfilment for a Leading Logistics Provider",
@@ -84,7 +84,7 @@ export default function CaseStudies() {
       id: 4,
       title: "Scaling Up Seasonal Hiring with Siamo",
       tag: "warehouse",
-      image: ASSETS["/blog-1.svg"],
+      image: ASSETS["/cs-4.png"],
       publishedAt: "May, 2024",
       modal: {
         title: "Seasonal Warehouse Staffing for Siamo",
@@ -100,7 +100,7 @@ export default function CaseStudies() {
       id: 5,
       title: "FMCG visits and national recalls",
       tag: "retail",
-      image: ASSETS["/blog-2.svg"],
+      image: ASSETS["/cs-5.png"],
       publishedAt: "August, 2024",
       modal: {
         title: "Rapid Nationwide Product Recall in Under a Week",
