@@ -4,6 +4,7 @@ import {
   JobSeekersDropdown,
   EmployersDropdown,
 } from "@/components/NavDropdowns";
+import Logo from "../../public/logo.svg";
 
 export default function Navbar() {
   return (
@@ -11,7 +12,8 @@ export default function Navbar() {
       <div className="container mx-auto py-4 md:py-6 flex items-center justify-between">
         <div className="flex items-center gap-[30px]">
           <a href="/" className="flex items-center">
-            <img src={ASSETS["/logo"]} alt="Redwigwam" className="h-8" />
+            {/* <img src={ASSETS["/logo"]} alt="Redwigwam" className="h-8" /> */}
+            <Logo />
           </a>
           <a
             href="/about-us"
