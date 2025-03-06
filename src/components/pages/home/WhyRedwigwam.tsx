@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const why = [
   {
     image: ASSETS["/job-board"],
-    imageScale: 1.7,
+    imageScale: 1.2,
     title: "Job Board Distribution",
     points: [
       "We Post Jobs Everywhere – So You Don’t Have To",
