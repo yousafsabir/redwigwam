@@ -17,8 +17,8 @@ export default function Navbar() {
               src={ASSETS["/logo"]}
               alt="Redwigwam"
               className="h-8 w-auto"
-              width={32}
-              height={32}
+              width={400}
+              height={75}
             />
           </a>
           <a
