@@ -26,7 +26,7 @@ export const ASSETS = {
   "/key-benefits-bg.png": "/key-benefits-bg.png",
   "/link-white.svg": "/link-white.svg",
   "/linkedin-black.svg": "/linkedin-black.svg",
-  "/logo": "/logo.png",
+  "/logo": "/logo.svg",
   "/manager-white.png": "/manager-white.png",
   "/p1.png": "/p1.png",
   "/p10.png": "/p10.png",
