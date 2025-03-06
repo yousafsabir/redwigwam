@@ -1,7 +1,7 @@
 export const ASSETS = {
   "/all-bookmark-white.svg": "/all-bookmark-white.svg",
   "/all-tools-bg.png": "/all-tools-bg.png",
-  "/all-tools": "/all-tools.png",
+  "/all-tools": "/all-tools.svg",
   "/angle-down.svg": "/angle-down.svg",
   "/arrow-right-black.svg": "/arrow-right-black.svg",
   "/arrow-right-white.svg": "/arrow-right-white.svg",
