@@ -16,7 +16,7 @@ const why = [
   },
   {
     image: ASSETS["/qualified-workers"],
-    imageScale: 1.5,
+    imageScale: 1.2,
     title: "Find Qualified Workers",
     points: [
       "Browse top candidates and instantly match with the best fit for your business.",
@@ -27,7 +27,7 @@ const why = [
   },
   {
     image: ASSETS["/responsive-candidates"],
-    imageScale: 1.45,
+    imageScale: 1.2,
     title: "Responsive Candidates",
     points: [
       "90% of candidates respond within 5 minutes—reach them where they are.",
@@ -38,7 +38,7 @@ const why = [
   },
   {
     image: ASSETS["/right-to-work"],
-    imageScale: 1.4,
+    imageScale: 1.2,
     title: "Right to Work",
     points: [
       "We verify Right to Work at no extra cost—so you hire with confidence.",
