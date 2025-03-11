@@ -76,7 +76,7 @@ export default function Header() {
               </a>
             </div>
             <div className="flex justify-center md:justify-start items-center gap-1 mt-8">
-              {[...Array(4)].map((i) => (
+              {[...Array(4)].map((v, i) => (
                 <img
                   src={ASSETS["/star.svg"]}
                   alt="star"
