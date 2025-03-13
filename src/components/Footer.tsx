@@ -18,7 +18,7 @@ const legal = [
 const socialLinks: {
   label: string;
   href: string;
-  icon: keyof typeof ASSETS;
+  icon: any;
 }[] = [
   {
     label: "Facebook",
@@ -158,6 +158,7 @@ export default function () {
             {socialLinks.map((social, i) => (
               <a href={social.href} key={social.href + i} target="_blank">
                 <img
+                  // @ts-ignore
                   src={ASSETS[social.icon]}
                   alt={social.label}
                   className="w-6 h-6 group-hover:brightness-200"

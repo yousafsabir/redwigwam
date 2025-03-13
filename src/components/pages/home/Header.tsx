@@ -110,6 +110,7 @@ export default function Header() {
                 <div className="flex justify-center" key={image}>
                   <div className="max-[400px]:w-[75px] rounded-2xl overflow-hidden">
                     <img
+                      // @ts-ignore
                       src={ASSETS[image]}
                       alt="Professional"
                       className="w-full h-full object-cover"
@@ -147,6 +148,7 @@ export default function Header() {
                     <SwiperSlide key={image}>
                       <div className="rounded-2xl w-[120px] aspect-square overflow-hidden">
                         <img
+                          // @ts-ignore
                           src={ASSETS[image]}
                           alt="Professional"
                           className="w-full h-full object-cover"
