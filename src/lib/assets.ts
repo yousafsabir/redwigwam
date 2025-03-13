@@ -77,7 +77,7 @@ export const ASSETS = {
   "/job-board": "/job-board.png",
   "/youtube-black.svg": "/youtube-black.svg",
   brands: [
-    "/brands/stara-food.jpg",
+    "/brands/stara-foods.jpg",
     "/brands/twcompany.jpg",
     "/brands/urban-things.jpg",
     "/brands/wave.jpg",

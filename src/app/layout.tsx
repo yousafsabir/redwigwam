@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import "swiper/css/mousewheel";
+import "swiper/css/autoplay";
 
 import "./globals.css";
 
