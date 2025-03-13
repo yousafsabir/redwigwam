@@ -17,14 +17,16 @@ export default function Brands() {
           services are tailored to fit your needs.
         </p>
         <Swiper
+          className="header-swiper"
           modules={[Autoplay]}
           slidesPerView={2}
           spaceBetween={32}
           loop={true}
           autoplay={{
-            delay: 2000,
+            delay: 0,
             disableOnInteraction: false,
           }}
+          speed={3000}
           breakpoints={{
             580: {
               slidesPerView: 3,
