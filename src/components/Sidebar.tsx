@@ -67,7 +67,9 @@ export default function Sidebar() {
               Job Seekers
             </AccordionTrigger>
             <AccordionContent className="flex flex-col items-center space-y-2 border-b">
-              <a href="#">Sign up now</a>
+              <a href="https://login.redwigwam.com/otp-email?utm_source=websitesignuppage&utm_term=none">
+                Sign up now
+              </a>
               <a href="https://www.redwigwam.com/jobs/">Latest jobs</a>
             </AccordionContent>
           </AccordionItem>

@@ -15,7 +15,9 @@ export function JobSeekersDropdown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-white rounded-xl p-3">
         <DropdownMenuItem className="text-base hover:underline">
-          <a href="#">Sign up now</a>
+          <a href="https://login.redwigwam.com/otp-email?utm_source=websitesignuppage&utm_term=none">
+            Sign up now
+          </a>
         </DropdownMenuItem>
         <DropdownMenuItem className="text-base hover:underline">
           <a href="https://www.redwigwam.com/jobs/">Latest jobs</a>
