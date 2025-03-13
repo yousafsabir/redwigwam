@@ -35,7 +35,7 @@ export default function CaseStudies() {
     {
       id: 1,
       title: "6,500+ Hours of Staffing Delivered in 3 Weeks – Here’s How",
-      tag: "retail",
+      tag: "Retail",
       image: ASSETS["/cs-1.png"],
       publishedAt: "Dec, 2025",
       modal: {
@@ -51,7 +51,7 @@ export default function CaseStudies() {
     {
       id: 2,
       title: "How We Reached 2,000 Applicants Across the UK",
-      tag: "field marketing",
+      tag: "Field Marketing",
       image: ASSETS["/cs-2.png"],
       publishedAt: "May, 2024",
       modal: {
@@ -67,7 +67,7 @@ export default function CaseStudies() {
     {
       id: 3,
       title: "Automating Logistics Staffing for Faster Hiring",
-      tag: "logistics",
+      tag: "Logistics",
       image: ASSETS["/cs-3.png"],
       publishedAt: "June, 2023",
       modal: {
@@ -83,7 +83,7 @@ export default function CaseStudies() {
     {
       id: 4,
       title: "Scaling Up Seasonal Hiring with Siamo",
-      tag: "warehouse",
+      tag: "Warehouse",
       image: ASSETS["/cs-4.png"],
       publishedAt: "May, 2024",
       modal: {
@@ -99,7 +99,7 @@ export default function CaseStudies() {
     {
       id: 5,
       title: "FMCG visits and national recalls",
-      tag: "retail",
+      tag: "Retail",
       image: ASSETS["/cs-5.png"],
       publishedAt: "August, 2024",
       modal: {
